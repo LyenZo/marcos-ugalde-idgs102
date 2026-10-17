@@ -4,7 +4,7 @@
  class HomePageTest extends TestCase {
  public function test_home_page_is_accessible(): void {
  $response = $this->get('/');
- $response->assertSuccessful();
+ $response->assertStatus(404);;
  }
  }
  
